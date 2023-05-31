@@ -1,14 +1,15 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 from sys import argv
 import math
+"""
 
-"""factor
-Factor many numbers into a product of 2 small numbers
+Factorize as many numbers as possible
 
 """
 
+
 def factory(num):
-    """gets the factors"""
+    """gets the factors of a number"""
     if num % 2 == 0:
         i = 2
         print("{}={}*{}".format(num, int(num//i), i))
@@ -27,7 +28,7 @@ def factory(num):
 
 
 def factors(filename):
-    """read file for numbers"""
+    """read_file and prints them out"""
 
     with open(filename, encoding="utf-8") as my_file:
         for i in my_file.readlines():
